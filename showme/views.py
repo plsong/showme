@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from gallary.models import Gallary
 
 def home(request):
-    return render(request,'home.html')
+    gallarys=Gallary.objects
+    return render(request,'home.html',{'gallarys':gallarys})
