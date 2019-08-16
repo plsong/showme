@@ -11,3 +11,6 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title # 这个函数创建
+
+    def abstract(self):
+        return self.text[:20]+'...'
