@@ -64,14 +64,14 @@
         <br>
       <p class="lead text-muted"> 他时若遂凌云志，敢笑黄巢不丈夫。</p>
       <p>
-        <a href=".." class="btn btn-primary my-2">回到主页</a>
+        <a href=".." class="btn btn-primary my-2">回到个人主页</a>
 
       </p>
     </div>
   </section>
     <div class="container">
         {% for blog in blog.all %}
-        <h2><a href="{{ blog.id }}"> {{ blog.title }}</a></h2>
+        <h2><a href="{{ blog.id }}"> {{ blog.title }} </a></h2>
         <br>
         {{ blog.date }}
         <br>

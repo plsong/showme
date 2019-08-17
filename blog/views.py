@@ -1,4 +1,4 @@
-from django.shortcuts import render,get_list_or_404
+from django.shortcuts import render,get_object_or_404
 from .models import Blog
 
 
@@ -9,5 +9,6 @@ def blog_page(request):
 
 
 def blog_text(request,blog_id):
-    blog = get_list_or_404(Blog,pk=blog_id)
-    return render(request,'blog_text.html',{'blog':blog})
+
+    blog = get_object_or_404(Blog,pk=blog_id)
+    return render(request,'blog_text.html', {'blog':blog})
