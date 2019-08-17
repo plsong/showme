@@ -2,6 +2,10 @@
 
 <!doctype html>
 <html lang="en">
+
+{% load staticfiles %}
+
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,15 +28,14 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
         </div>
         <div class="col-sm-4 offset-md-1 py-4">
           <h4 class="text-white">Contact</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Follow on Twitter</a></li>
-            <li><a href="#" class="text-white">Like on Facebook</a></li>
-            <li><a href="#" class="text-white">Email me</a></li>
+            <li><a href="#" class="text-white">Email me:hellowpengliang@qq.com
+                <br>
+            Github: https://github.com/plsong
+            </a></li>
           </ul>
         </div>
       </div>
@@ -57,12 +60,13 @@
     <div class="container">
       <h1 class="jumbotron-heading">我的个人主页</h1>
       <p class="lead text-muted">I'm pengliang Song, and from Pingyu,HenanProvence. Now I'm studing in Beijing Jiaotong University.
-          <br> email: hellowpengliang@qq.com
-          <br> Github: https://github.com/plsong
 
       </p>
+
+        <img src="{% static 'me.jpg' %} " width="20%">
       <p>
         <a href="blog" class="btn btn-primary my-2">我的个人博客</a>
+          <a href="{% static 'resume.pdf' %} " class="btn btn-primary my-2">我的简历</a>
       </p>
     </div>
   </section>
@@ -95,8 +99,10 @@
     <p class="float-right">
       <a href="#">Back to top</a>
     </p>
-    <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+    <p>copyright@plsong
+        <br>
+        Powered by Django
+    </p>
   </div>
 </footer>
 
